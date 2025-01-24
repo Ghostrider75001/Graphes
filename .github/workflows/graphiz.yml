@@ -11,10 +11,10 @@ jobs:
       uses: actions/checkout@v3
       
     - name: Lancement graphviz
-      run: ./graphiz1.sh g1
+      run: ./graphiz2.sh g1
       
     - name: upload du resultat
       uses: actions/upload-artifact@v4
       with:
         name: graphviz_output
-        path: g1.svg
+        path: *.svg
